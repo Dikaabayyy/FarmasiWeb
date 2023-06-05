@@ -112,7 +112,7 @@
                             </div>
 
                             <div class="col">
-                                <br><h4 class="card-htitle">Detail Obat Pasien</h4>
+                                <h4 class="card-htitle">Detail Obat Pasien</h4>
                                 <h5>
                                     Estimasi Obat Habis :
                                 </h5>
@@ -330,13 +330,64 @@
                             Add Data
                         </button>
                 </div>
-                <div class="tab-pane fade show {{ Route::currentRouteName() == 'keluhan-pasien' ? 'active' : '' }} pt-3" id="profile-drp">
-                    <h4 class="card-htitle">DRP Pasien</h4>
 
-                    <h4> Pertanyaan</h4>
-                    <span class="dpasien">
-                        Jawaban Pasien
-                    </span>
+                <div class="tab-pane fade show {{ Route::currentRouteName() == 'keluhan-pasien' ? 'active' : '' }} pt-3" id="profile-drp">
+
+                    <div class="row">
+                        <div class="col">
+
+                            <h4 class="card-htitle">Informasi Pengobatan Pasien</h4>
+
+                                    <h5 class="header-dpasien">Indikasi Pasien  </h5>
+                                    <span class="dpasien">
+                                        [Sesuai / Tidak Sesuai]
+                                    </span>
+
+                                    <h5 class="header-dpasien">Keamanan</h5>
+                                    <span class="dpasien">
+                                        [Aman / Tidak Aman]
+                                    </span>
+
+                                    <h5 class="header-dpasien">Efikasi</h5>
+                                    <span class="dpasien">
+                                        [Efektif / Tidak Efektif]
+                                    </span>
+
+                                    <h5 class="header-dpasien">Kepatuhan</h5>
+                                    <span class="dpasien">
+                                        [Patuh / Tidak Patuh]
+                                    </span>
+
+                                    <h5 class="header-dpasien">Catatan Apt</h5>
+                                    <span class="dpasien">
+                                        [Catatan Apoteker]
+                                    </span>
+                            </div>
+
+                            <div class="col">
+                                <h4 class="card-htitle">Resiko Pasien</h4>
+
+                                <h5 class="header-dpasien">CVD Risk</h5>
+                                <span class="dpasien">
+                                    [Hasil CVD Risk]
+                                </span>
+
+                                <h5 class="header-dpasien">BP Level</h5>
+                                <span class="dpasien">
+                                    [pra ht/level 1/level 2/krisis ht]
+                                </span>
+
+                                <h5 class="header-dpasien">Comorbid</h5>
+                                <span class="dpasien">
+                                    [ ]
+                                </span>
+
+                                <h5 class="header-dpasien">Efek Samping Obat</h5>
+                                <span class="dpasien">
+                                    [ ]
+                                </span>
+                            </div>
+                        </div>
 
                 </div>
 

@@ -534,18 +534,179 @@
 
                 </div>
                 <div class="tab-pane fade show {{ Route::currentRouteName() == 'keluhan-pasien' ? 'active' : '' }} pt-3" id="profile-drp">
-                    <h4 class="card-htitle">DRP Pasien</h4>
+                    <div class="row">
+                        <div class="col">
 
-                    <h4> Pertanyaan</h4>
-                    <span class="dpasien">
-                        Jawaban Pasien
-                    </span>
+                            <h4 class="card-htitle">Informasi Pengobatan Pasien</h4>
 
+                            <h5 class="header-dpasien">Indikasi Pasien  </h5>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes1" value="Yes" required>
+                                        <label class="form-check-label" for="cigarettes1">
+                                            Sesuai
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Tidak Sesuai
+                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Keamanan</h5>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes1" value="Yes" required>
+                                        <label class="form-check-label" for="cigarettes1">
+                                            Aman
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Tidak Aman
+                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Efikasi</h5>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes1" value="Yes" required>
+                                        <label class="form-check-label" for="cigarettes1">
+                                            Efektif
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Tidak Efektif
+                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Kepatuhan</h5>
+                            <div class="row mb-3">
+                                <div class="col-2 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes1" value="Yes" required>
+                                        <label class="form-check-label" for="cigarettes1">
+                                            Patuh
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Tidak Patuh
+                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Catatan Apt</h5>
+                            <textarea name="catatan" class="form-control int-lbl" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+                        </div>
+
+                        <div class="col">
+                            <h4 class="card-htitle">Resiko Pasien</h4>
+
+                            <h5 class="header-dpasien">CVD Risk</h5>
+                            <span class="dpasien">
+                                [Hasil CVD Risk]
+                            </span>
+
+                            <h5 class="header-dpasien">BP Level</h5>
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes1" value="Yes" required>
+                                        <label class="form-check-label" for="cigarettes1">
+                                            Pra HT
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Level 1
+                                         </label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Level 2
+                                         </label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        <label class="form-check-label" for="cigarettes2">
+                                            Krisis HT
+                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Comorbid</h5>
+                            <div class="row mb-3">
+                                <div class="col-4">
+                                    <div class="mb-3">
+                                        Ya
+                                    </div>
+                                    <div class="mb-3">
+                                        Tidak
+                                    </div>
+                                    <div class="mb-3">
+                                        Jenis Penyakit (Jika Ya)
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cigarettes" id="cigarettes2" value="No" required>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="align-items-end">
+                                            <input type="text" name="name" class="form-control int-lbl" id="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="header-dpasien">Efek Samping Obat</h5>
+                            <textarea name="catatan" class="form-control int-lbl" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+                        </div>
+                    </div>
                 </div>
-
-
         </div><!-- End Bordered Tabs -->
-
     </div>
 
     {{-- Modal Add Schedule --}}
